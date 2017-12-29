@@ -1,8 +1,17 @@
-This directory contains SpiderMonkey 59.
+This tarball contains SpiderMonkey 59.
 
-This release is based on a revision of Mozilla 59:
-  https://hg.mozilla.org/releases/
-The changes in the patches/ directory were applied.
+It is based on the XXXX build from Mozilla as of XXXX,
+downloaded from:
+XXXX
+(Link expires after at least 30 and at most 90 days)
 
-MDN hosts the latest SpiderMonkey 59 release notes:
-  https://developer.mozilla.org/en-US/docs/SpiderMonkey/59
+The source for this tarball is the "mozjs59" branch of
+https://github.com/ptomato/mozjs, which consists of the Mozilla tarball
+unpacked, plus patches which are pending review and/or backporting in
+Mozilla's bug tracker.
+
+Patches applied:
+Always link mozglue into the shared library when building standalone
+build: Be nicer about options
+build: Deal with git-checkout mtimes
+README: Clarify provenance of this source
